@@ -41,6 +41,10 @@ set statusline=%F\ %m\ lines\ %L\ line:\ %l\ column:\ %c
 " Always show status line
 set laststatus=2
 
+" No beeps, no flashes
+set visualbell
+set t_vb=
+
 " Forbid arrow movement
 noremap <Up> <nop>
 noremap <Down> <nop>
