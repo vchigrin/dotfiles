@@ -64,4 +64,9 @@ nnoremap K i<CR><Esc>
 
 " Run pathogen plugins
 execute pathogen#infect()
+
+nmap <F3> :NERDTreeToggle<CR>
+nmap <F4> :TagbarToggle<CR>
+let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
+
 cd C:\vchigrin\bro\1\browser\src
