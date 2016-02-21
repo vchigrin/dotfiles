@@ -81,4 +81,3 @@ set ff=unix
 
 let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 
-cd C:\vchigrin\bro\1\browser\src
