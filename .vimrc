@@ -75,6 +75,10 @@ set incsearch           " Incremental search
 set hlsearch            " Enable search highlighting
 " Remove search highlight by Esc key
 nnoremap <esc> :noh<return><esc>
+
+" Always make Unix line endings
+set ff=unix
+
 let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 
 cd C:\vchigrin\bro\1\browser\src
