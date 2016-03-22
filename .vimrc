@@ -78,6 +78,8 @@ nnoremap <esc> :noh<return><esc>
 
 " Always make Unix line endings
 set ff=unix
+" Save as UTF-8
+set fileencoding=utf-8
 
 let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 
