@@ -83,3 +83,8 @@ set fileencoding=utf-8
 
 let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 
+" FSwitch setup
+nmap <F5> :FSHere<CR>
+au! BufEnter *.cc let b:fswitchdst = 'h'
+au! BufEnter *.cpp let b:fswitchdst = 'h'
+au! BufEnter *.h let b:fswitchdst = 'cc'
