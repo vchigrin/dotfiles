@@ -29,7 +29,7 @@ set smartindent
 set makeprg=ninja
 
 "Trim trailing whitespace on save
-" autocmd FileType c,cpp,java,pyhton,js,html autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c,cpp,java,pyhton,js,html autocmd BufWritePre <buffer> :%s/\s\+$//e
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Allow not saved text in buffer.
@@ -67,14 +67,14 @@ execute pathogen#infect()
 
 nmap <F3> :NERDTreeToggle<CR>
 nmap <F4> :TagbarToggle<CR>
+nmap <F6> :make<CR>
+nmap <F7> :cn<CR>
 
 set showmatch           " Show matching brackets.
 set ignorecase          " Do case insensitive matching
 set smartcase           " Do smart case matching
 set incsearch           " Incremental search
 set hlsearch            " Enable search highlighting
-" Remove search highlight by Esc key
-nnoremap <esc> :noh<return><esc>
 
 " Always make Unix line endings
 set ff=unix
@@ -87,4 +87,16 @@ let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 nmap <F5> :FSHere<CR>
 au! BufEnter *.cc let b:fswitchdst = 'h'
 au! BufEnter *.cpp let b:fswitchdst = 'h'
-au! BufEnter *.h let b:fswitchdst = 'cc'
+au! BufEnter *.h let b:fswitchdst = 'cc,cpp'
+au! BufEnter *.py setlocal tabstop=4 shiftwidth=4 softtabstop=4
+au! BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
+
+
+" Remove search highlight by Esc key
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
+" File path completion with Tab.
+set wildmode=longest,list,full
+" Highlight possible file name completions.
+set wildmenu
