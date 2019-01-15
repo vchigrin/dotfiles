@@ -89,7 +89,9 @@ au! BufEnter *.cc let b:fswitchdst = 'h'
 au! BufEnter *.cpp let b:fswitchdst = 'h'
 au! BufEnter *.h let b:fswitchdst = 'cc,cpp'
 au! BufEnter *.py setlocal tabstop=4 shiftwidth=4 softtabstop=4
-au! BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
+au BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
+" Better indentation for comment lines.
+au BufEnter *.py inoremap # X#
 
 
 " Remove search highlight by Esc key
