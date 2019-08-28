@@ -15,8 +15,8 @@ set backspace=indent,eol,start
 colo pablo
 
 set softtabstop=2
-" Highlight 80 column as margin
-set colorcolumn=80
+" Highlight 100 column as margin
+set colorcolumn=100
 " Number lines
 set number
 " Avoid wrapping
@@ -62,10 +62,15 @@ vnoremap < <gv
 " Split lines with K button.
 nnoremap K i<CR><Esc>
 
+" Workaround for bug with disappearing cursor after vertical split
+set guioptions-=L
+
+let g:ycm_confirm_extra_conf = 0
+
 " Run pathogen plugins
 execute pathogen#infect()
 
-nmap <F3> :NERDTreeToggle<CR>
+nmap <F3> :NERDTreeToggle %:h<CR>
 nmap <F4> :TagbarToggle<CR>
 nmap <F6> :make<CR>
 nmap <F7> :cn<CR>
@@ -92,6 +97,8 @@ au! BufEnter *.py setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
 " Better indentation for comment lines.
 au BufEnter *.py inoremap # X#
+" ROS launch files support
+au BufEnter *.launch set filetype=xml
 
 
 " Remove search highlight by Esc key
@@ -102,3 +109,9 @@ nnoremap <esc>^[ <esc>^[
 set wildmode=longest,list,full
 " Highlight possible file name completions.
 set wildmenu
+" Show gVIM window maximized.
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window (for an alternative on Windows, see simalt below).
+  set lines=999 columns=999
+endif
