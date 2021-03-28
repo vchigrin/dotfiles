@@ -55,10 +55,6 @@ inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
 
-" Keep selection during block moving
-vnoremap > >gv
-vnoremap < <gv
-
 " Split lines with K button.
 nnoremap K i<CR><Esc>
 
