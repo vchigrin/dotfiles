@@ -60,9 +60,6 @@ set guioptions-=L
 
 let g:ycm_confirm_extra_conf = 0
 
-" Run pathogen plugins
-execute pathogen#infect()
-
 nmap <F3> :NERDTreeToggle %:h<CR>
 nmap <F4> :TagbarToggle<CR>
 nmap <F6> :make<CR>

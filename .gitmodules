@@ -1,0 +1,9 @@
+[submodule "vim-plugins/vim-fswitch"]
+	path = vim-plugins/pack/myplugins/start/vim-fswitch
+	url = https://github.com/derekwyatt/vim-fswitch.git
+[submodule "vim-plugins/nerdtree"]
+	path = vim-plugins/pack/myplugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-plugins/vim-fugitive"]
+	path = vim-plugins/pack/myplugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
