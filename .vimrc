@@ -25,9 +25,6 @@ set nowrap
 " Smart indentation
 set smartindent
 
-" Use ninja instead of make
-set makeprg=ninja
-
 "Trim trailing whitespace on save
 autocmd FileType c,cpp,java,pyhton,js,html autocmd BufWritePre <buffer> :%s/\s\+$//e
 autocmd BufWritePre * :%s/\s\+$//e
