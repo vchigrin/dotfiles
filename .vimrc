@@ -64,6 +64,7 @@ nmap <F3> :NERDTreeToggle %:h<CR>
 nmap <F4> :TagbarToggle<CR>
 nmap <F6> :make<CR>
 nmap <F7> :cn<CR>
+nmap <F8> :GFile<CR>
 
 set showmatch           " Show matching brackets.
 set ignorecase          " Do case insensitive matching
