@@ -11,8 +11,10 @@ set expandtab
 set shiftwidth=2
 " Backspace should work everywhere
 set backspace=indent,eol,start
-" GVim Color scheme.
-colo pablo
+" Color scheme.
+colo industry
+" Use background color from terminal preferences.
+hi Normal ctermbg=NONE
 
 set softtabstop=2
 " Highlight 100 column as margin
