@@ -108,3 +108,4 @@ if has("gui_running")
   " Maximize gvim window (for an alternative on Windows, see simalt below).
   set lines=999 columns=999
 endif
+let g:fubitive_domain_pattern = 'bitbucket\.somecompany\.ru'
