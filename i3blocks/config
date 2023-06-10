@@ -85,17 +85,18 @@ interval=10
 interval=5
 
 # CPU usage
-#
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu_usage]
-label=CPU
-interval=10
+[cpu_usage2]
+command=~/.config/i3blocks/i3blocks-contrib/cpu_usage2/cpu_usage2
+markup=pango
 min_width=CPU: 100.00%
-#separator=false
+interval=persist
 
-#[load_average]
-#interval=10
+# mem usage
+[mem_usage2]
+command=~/.config/i3blocks/i3blocks-contrib/memory2/memory2
+markup=pango
+interval=persist
+
 
 # Battery indicator
 #
@@ -153,7 +154,7 @@ interval=5
 #signal=11
 
 [xkb_layout]
-command=~/.config/i3blocks/i3blocks-contrib/xkb_layout/xkb_layout
+command= ~/.config/i3blocks/i3blocks-contrib/xkb_layout/xkb_layout
 interval=persist
 markup=pango
 color=#FF0000
