@@ -10,3 +10,6 @@
 [submodule "vim-plugins/pack/myplugins/start/fzf"]
 	path = vim-plugins/pack/myplugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "vim-plugins/pack/myplugins/start/YouCompleteMe"]
+	path = vim-plugins/pack/myplugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
