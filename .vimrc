@@ -17,8 +17,8 @@ colo industry
 hi Normal ctermbg=NONE
 
 set softtabstop=2
-" Highlight 100 column as margin
-set colorcolumn=100
+" Highlight 80 column as margin
+set colorcolumn=80
 " Number lines
 set number
 " Avoid wrapping
