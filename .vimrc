@@ -82,9 +82,10 @@ let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
 
 " FSwitch setup
 nmap <F5> :FSHere<CR>
-au! BufEnter *.cc let b:fswitchdst = 'h'
-au! BufEnter *.cpp let b:fswitchdst = 'h'
+au! BufEnter *.cc let b:fswitchdst = 'hpp,h'
+au! BufEnter *.cpp let b:fswitchdst = 'hpp,h'
 au! BufEnter *.h let b:fswitchdst = 'cc,cpp'
+au! BufEnter *.hpp let b:fswitchdst = 'cc,cpp,ipp'
 au! BufEnter *.py setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
 " Better indentation for comment lines.
