@@ -60,13 +60,12 @@ nnoremap K i<CR><Esc>
 " Workaround for bug with disappearing cursor after vertical split
 set guioptions-=L
 
-let g:ycm_confirm_extra_conf = 0
-
 nmap <F3> :NERDTreeToggle %:h<CR>
 nmap <F4> :TagbarToggle<CR>
-nmap <F6> :make<CR>
+nmap <F6> :copen<CR>
 nmap <F7> :cn<CR>
-nmap <F8> :GFile<CR>
+nmap <F8> :Files<CR>
+nmap <F9> :YcmCompleter GoTo<CR>
 
 set showmatch           " Show matching brackets.
 set ignorecase          " Do case insensitive matching
