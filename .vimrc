@@ -109,3 +109,7 @@ if has("gui_running")
   set lines=999 columns=999
 endif
 set grepprg=~/arcadia/ya\ grep\ --remote
+
+" End with double slash at the end, so VIM will generate unique file name
+" based on full path to file.
+set dir=~/vim_swp_files//
