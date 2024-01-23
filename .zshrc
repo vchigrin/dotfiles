@@ -16,4 +16,4 @@ export EDITOR=vim
 autoload -U colors && colors
 alias ls="ls --color=auto"
 # Taken from Oh my zsh cypher theme.
-PROMPT="%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}»%{${reset_color}%} "
+PROMPT="%{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}»%{${reset_color}%} "
