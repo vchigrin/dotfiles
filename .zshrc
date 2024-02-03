@@ -10,6 +10,10 @@ setopt inc_append_history
 setopt extended_history
 # Ask user confirm hist substitution before executing.
 setopt hist_verify
+# Preserve list of directories during cd to ease navigate with "cd ~4"
+setopt autopushd
+# Clear dups in directories list.
+setopt pushdignoredups
 
 export EDITOR=vim
 
