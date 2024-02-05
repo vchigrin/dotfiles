@@ -14,6 +14,9 @@ setopt hist_verify
 setopt autopushd
 # Clear dups in directories list.
 setopt pushdignoredups
+# Use new completion system
+autoload compinit
+compinit
 
 export EDITOR=vim
 
