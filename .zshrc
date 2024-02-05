@@ -18,6 +18,8 @@ setopt pushdignoredups
 autoload compinit
 compinit
 
+# Make "ls -l" give most time information.
+export TIME_STYLE=full-iso
 export EDITOR=vim
 
 autoload -U colors && colors
