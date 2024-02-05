@@ -21,6 +21,10 @@ compinit
 # Make "ls -l" give most time information.
 export TIME_STYLE=full-iso
 export EDITOR=vim
+# Set LS_COLORS variable.
+eval $(TERM=xterm dircolors)
+# Make completion colorful
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 autoload -U colors && colors
 alias ls="ls --color=auto"
