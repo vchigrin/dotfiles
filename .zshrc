@@ -2,6 +2,8 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+# Ignore history lines starting with space.
+HISTORY_IGNORE=' *'
 # Save history after each line added.
 setopt inc_append_history
 # Check what has been added by other instances of ZSH
