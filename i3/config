@@ -110,8 +110,8 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 - term"
 set $ws2 "2 - browser"
-set $ws3 "3"
-set $ws4 "4"
+set $ws3 "3 - Telegram"
+set $ws4 "4 - Misc"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -182,3 +182,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command SCRIPT_DIR=~/.config/i3blocks/i3blocks-contrib/ i3blocks
 }
+
+exec --no-startup-id /usr/bin/i3-msg "workspace $ws2; exec /usr/bin/x-www-browser"
+exec --no-startup-id /usr/bin/i3-msg "workspace $ws1; exec /usr/bin/i3-sensible-terminal"
+exec --no-startup-id /usr/bin/i3-msg "workspace $ws3; exec /usr/bin/telegram-desktop"
