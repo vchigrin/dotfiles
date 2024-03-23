@@ -110,14 +110,20 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 - term"
 set $ws2 "2 - browser"
-set $ws3 "3"
-set $ws4 "4"
+set $ws3 "3 - telegram"
+set $ws4 "4 - misc"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+# Rules to assign windos to workspace.
+assign [title="Alacritty"] $ws1
+assign [title="Firefox"] $ws2
+assign [title="Telegram"] $ws3
+assign [title="Thunderbird"] $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
