@@ -119,6 +119,14 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Rules to assign windos to workspace.
+assign [title="Alacritty"] $ws1
+assign [title="Firefox"] $ws2
+assign [title="Yandex Browser"] $ws2
+assign [title="Telegram"] $ws3
+assign [title="Thunderbird"] $ws4
+assign [title="Joplin"] $ws4
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
