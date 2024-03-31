@@ -54,11 +54,11 @@
         "format": "{:%H:%M:%S}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "CPU: {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "RAM: {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
