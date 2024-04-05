@@ -98,6 +98,7 @@ window#waybar.chromium {
     margin-right: 0;
 }
 
+/*
 #clock {
     background-color: #64727D;
 }
@@ -111,6 +112,7 @@ window#waybar.chromium {
     color: #ffffff;
     background-color: #26A65B;
 }
+*/
 
 @keyframes blink {
     to {
@@ -145,6 +147,7 @@ label:focus {
     color: #ff0000;
 }
 
+/*
 #backlight {
     background-color: #90b1b1;
 }
@@ -161,6 +164,7 @@ label:focus {
     background-color: #f1c40f;
     color: #000000;
 }
+*/
 
 #pulseaudio.muted {
     background-color: #90b1b1;
