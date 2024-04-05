@@ -135,11 +135,19 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
+#cpu.moderate {
+    color: #ffa500;
+}
+
+#cpu.high {
     color: #ff0000;
 }
 
-#memory {
+#memory.moderate {
+    color: #ffa500;
+}
+
+#memory.high {
     color: #ff0000;
 }
 
@@ -156,10 +164,13 @@ label:focus {
     background-color: #2980b9;
 }
 
+*/
+
 #network.disconnected {
     background-color: #f53c3c;
 }
 
+/*
 #pulseaudio {
     background-color: #f1c40f;
     color: #000000;

@@ -55,10 +55,18 @@
     },
     "cpu": {
         "format": "CPU: {usage}%",
+        "states": {
+            "moderate": 30,
+            "high": 90
+        },
         "tooltip": false
     },
     "memory": {
-        "format": "RAM: {}%"
+        "format": "RAM: {}%",
+        "states": {
+            "moderate": 30,
+            "high": 90
+        },
     },
     "temperature": {
         // "thermal-zone": 2,
