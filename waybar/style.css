@@ -246,8 +246,17 @@ label:focus {
 }
 
 #language {
-    color: #ff0000;
     font-size: 20pt;
+    color: #ffff00;
+}
+
+/* Per-layout styles will start work after swaybar update. */
+#language.ru {
+    color: #ff0000;
+}
+
+#language.en {
+    color: #00ff00;
 }
 
 #keyboard-state {

@@ -78,7 +78,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "LGHT: {percent}% {icon}",
+        "format": "Light: {percent}% {icon}",
         "format-icons": ["", ""]
     },
     "battery": {
@@ -104,14 +104,17 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+    "sway/language": {
+      "format": "{shortDescription}",
+    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "VOL: {volume}% {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "VOL muted {format_source}",
         "format-source": "MIC: {volume}%",
-        "format-source-muted": "",
+        "format-source-muted": "MIC muted",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
