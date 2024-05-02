@@ -205,7 +205,7 @@ output eDP-1 res 1920x1080
 # output HDMI-A-1 layout none mirror eDP-1
 
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id /home/vchigrin/dotfiles/lid_watcher.py
+exec --no-startup-id bash -c "/home/vchigrin/dotfiles/lid_watcher.py > /tmp/lid_out.txt 2> /tmp/lid_err.txt"
 
 # exec --no-startup-id /usr/bin/i3-msg "workspace $ws2; exec /usr/bin/x-www-browser"
 # exec --no-startup-id /usr/bin/i3-msg "workspace $ws1; exec /usr/bin/i3-sensible-terminal"
