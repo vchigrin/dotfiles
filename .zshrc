@@ -34,5 +34,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 autoload -U colors && colors
 alias ls="ls --color=auto"
 alias bat="batcat --wrap=never --paging=always"
+alias ya=/home/vchigrin/arcadia/ya
+hash -d autorecovery=/home/vchigrin/arcadia/taxi/uservices/services/autorecovery
 # Taken from Oh my zsh cypher theme.
 PROMPT="%{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}»%{${reset_color}%} "
