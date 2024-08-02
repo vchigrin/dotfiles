@@ -19,14 +19,21 @@ def get_current_state() -> str:
 
 
 def change_builtin_display_state(desired_state: str):
-    subprocess.check_call([
-        'swaymsg', 'output', BUILTIN_DISPLAY_DEV, desired_state
-    ])
+    try:
+        subprocess.check_call([
+            'swaymsg', 'output', BUILTIN_DISPLAY_DEV, desired_state
+        ])
+    except Exception as e:
+        print(f"Failed change output. Error {e}")
 
 def find_main_display_dev() -> str:
-    content = subprocess.check_output([
-        'swaymsg', '-t', 'get_outputs'
-    ])
+    try:
+        content = subprocess.check_output([
+            'swaymsg', '-t', 'get_outputs'
+        ])
+    except Exception as e:
+        print(f"Failed get outputs. Error {e}")
+        return None
     items = json.loads(content)
     for item in items:
         match = RE_MAIN_DISPLAY_DEV.match(item['name'])
@@ -38,10 +45,13 @@ def fix_main_display_resolution():
     main_display_dev = find_main_display_dev()
     if not main_display_dev:
         return
-    subprocess.check_call([
-        'swaymsg', 'output', main_display_dev, 'res',
-        MAIN_DISPLAY_PREFERRED_RESOLUTION
-    ])
+    try:
+        subprocess.check_call([
+            'swaymsg', 'output', main_display_dev, 'res',
+            MAIN_DISPLAY_PREFERRED_RESOLUTION
+        ])
+    except Exception as e:
+        print(f"Failed change resolution. Error {e}")
 
 
 def check_iteration():
