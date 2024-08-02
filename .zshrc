@@ -38,3 +38,7 @@ alias ya=/home/vchigrin/arcadia/ya
 hash -d autorecovery=/home/vchigrin/arcadia/taxi/uservices/services/autorecovery
 # Taken from Oh my zsh cypher theme.
 PROMPT="%{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}»%{${reset_color}%} "
+
+
+# The next line enables shell completion for TARS utility
+[ -f /home/vchigrin/.tars/shell/rc_ext.zsh ] && source /home/vchigrin/.tars/shell/rc_ext.zsh
