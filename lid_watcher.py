@@ -5,7 +5,7 @@ import subprocess
 import time
 
 BUILTIN_DISPLAY_DEV = 'eDP-1'
-RE_MAIN_DISPLAY_DEV = re.compile('^(DP-[0-9]+)')
+RE_MAIN_DISPLAY_DEV = re.compile('^(HDMI-A-[0-9]+)')
 MAIN_DISPLAY_PREFERRED_RESOLUTION = '1920x1080'
 g_last_seen_state = None
 
