@@ -42,3 +42,5 @@ PROMPT="%{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${f
 
 # The next line enables shell completion for TARS utility
 [ -f /home/vchigrin/.tars/shell/rc_ext.zsh ] && source /home/vchigrin/.tars/shell/rc_ext.zsh
+
+if [ -e /home/vchigrin/.nix-profile/etc/profile.d/nix.sh ]; then . /home/vchigrin/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
