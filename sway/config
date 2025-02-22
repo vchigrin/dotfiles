@@ -44,7 +44,7 @@ bindsym --to-code $mod+Shift+y exec --no-startup-id /home/vchigrin/dotfiles/scre
 floating_modifier $mod
 
 # start a terminal
-bindsym --to-code $mod+Return exec i3-sensible-terminal
+bindsym --to-code $mod+Return exec x-terminal-emulator
 
 # kill focused window
 bindsym --to-code $mod+Shift+q kill
@@ -82,10 +82,10 @@ bindsym --to-code $mod+Shift+Up move up
 bindsym --to-code $mod+Shift+Right move right
 
 # split in horizontal orientation
-# bindsym $mod+h split h
+bindsym --to-code $mod+g split h
 
 # split in vertical orientation
-# bindsym $mod+v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym --to-code $mod+f fullscreen toggle
@@ -105,7 +105,7 @@ bindsym --to-code $mod+space focus mode_toggle
 bindsym --to-code $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym --to-code $mod+b focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -113,7 +113,7 @@ set $ws1 "1 - term"
 set $ws2 "2 - browser"
 set $ws3 "3 - Telegram"
 set $ws4 "4 - Misc"
-set $ws5 "5"
+set $ws5 "5 - Strawberry"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -127,6 +127,7 @@ assign [title="Yandex Browser"] $ws2
 assign [title="Telegram"] $ws3
 assign [title="Thunderbird"] $ws4
 assign [title="Joplin"] $ws4
+assign [title="Strawberry"] $ws5
 
 # switch to workspace
 bindsym --to-code $mod+1 workspace number $ws1
