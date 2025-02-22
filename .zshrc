@@ -35,5 +35,6 @@ autoload -U colors && colors
 alias ls="ls --color=auto"
 alias bat="batcat --wrap=never --paging=always"
 hash -d lao=~/redmi_9A/lineage_os
+hash -d rtime=~/projects/pinetime/rtime
 # Taken from Oh my zsh cypher theme.
 PROMPT="%{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}»%{${reset_color}%} "
