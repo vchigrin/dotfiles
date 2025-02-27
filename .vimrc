@@ -78,7 +78,7 @@ set ff=unix
 " Save as UTF-8
 set fileencoding=utf-8
 
-let g:tagbar_ctags_bin="C:/vchigrin/Tools/ctags58/ctags.exe"
+let g:tagbar_ctags_bin="/usr/bin/ctags"
 
 " FSwitch setup
 nmap <F5> :FSHere<CR>
