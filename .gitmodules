@@ -13,3 +13,6 @@
 [submodule "vim-plugins/pack/myplugins/start/YouCompleteMe"]
 	path = vim-plugins/pack/myplugins/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim-plugins/pack/myplugins/start/tagbar"]
+	path = vim-plugins/pack/myplugins/start/tagbar
+	url = https://github.com/preservim/tagbar.git
