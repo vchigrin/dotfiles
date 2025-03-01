@@ -90,8 +90,9 @@ au! BufEnter *.cpp let b:fswitchdst = 'hpp,h'
 au! BufEnter *.h let b:fswitchdst = 'cc,cpp'
 au! BufEnter *.hpp let b:fswitchdst = 'cc,cpp,ipp'
 au! BufEnter *.py setlocal tabstop=4 shiftwidth=4 softtabstop=4
-au! BufEnter *.rs setlocal tabstop=4 shiftwidth=4 softtabstop=4
-au! BufEnter *.rs TagbarOpen()
+au BufEnter *.rs setlocal tabstop=4 shiftwidth=4 softtabstop=4
+au BufEnter *.rs let $FZF_DEFAULT_COMMAND='find . \( -name target -o -name .git \) -prune -o -print'
+au BufEnter *.rs TagbarOpen()
 au BufEnter *.py setlocal makeprg=python\ -m\ flake8\ %
 " Better indentation for comment lines.
 au BufEnter *.py inoremap # X#
