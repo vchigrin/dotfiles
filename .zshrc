@@ -34,6 +34,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 autoload -U colors && colors
 alias ls="ls --color=auto"
 alias bat="batcat --wrap=never --paging=always"
+alias git_rebase_and_sign="git rebase --exec 'git commit --amend --no-edit -n -S' -i"
 hash -d lao=~/redmi_9A/lineage_os
 hash -d rtime=~/projects/pinetime/rtime
 # Taken from Oh my zsh cypher theme.
