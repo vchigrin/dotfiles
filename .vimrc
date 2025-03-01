@@ -13,6 +13,9 @@ set shiftwidth=2
 set backspace=indent,eol,start
 " Color scheme.
 colo industry
+hi IlluminatedWordText cterm=underline
+hi IlluminatedWordRead cterm=underline
+hi IlluminatedWordWrite cterm=underline
 " Use background color from terminal preferences.
 hi Normal ctermbg=NONE
 

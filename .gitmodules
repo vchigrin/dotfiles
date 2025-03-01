@@ -16,3 +16,6 @@
 [submodule "vim-plugins/pack/myplugins/start/tagbar"]
 	path = vim-plugins/pack/myplugins/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "vim-plugins/pack/myplugins/start/vim-illuminate"]
+	path = vim-plugins/pack/myplugins/start/vim-illuminate
+	url = https://github.com/RRethy/vim-illuminate
