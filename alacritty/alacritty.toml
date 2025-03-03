@@ -24,7 +24,7 @@ foreground = "#333333"
 TERM = "xterm-256color"
 
 [font]
-size = 16.0
+size = 14.0
 
 [font.normal]
 family = "JetBrainsMonoNL NFM"
