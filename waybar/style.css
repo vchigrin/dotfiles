@@ -247,6 +247,7 @@ label:focus {
 
 #language {
     font-size: 20pt;
+    min-width: 50px;
     color: #ffff00;
 }
 
