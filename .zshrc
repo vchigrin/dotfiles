@@ -1,7 +1,7 @@
 # History setup.
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
-SAVEHIST=10000
+SAVEHIST=100000
 # Ignore history lines starting with space.
 # HISTORY_IGNORE=' *'
 setopt HIST_IGNORE_SPACE
