@@ -22,3 +22,9 @@
 [submodule "nvim/pack/vchigrin_plugins/start/nvim-lspconfig"]
 	path = nvim/pack/vchigrin_plugins/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "nvim/pack/vchigrin_plugins/start/fzf.vim"]
+	path = nvim/pack/vchigrin_plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "nvim/pack/vchigrin_plugins/start/fzf"]
+	path = nvim/pack/vchigrin_plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
