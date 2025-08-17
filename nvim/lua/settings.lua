@@ -32,3 +32,7 @@ vim.api.nvim_set_option_value('visualbell', true, {})
 vim.api.nvim_set_option_value('ff', 'unix', {})
 -- Save as UTF-8
 vim.api.nvim_set_option_value('fileencoding', 'utf-8', {})
+
+-- Avoid confusion with highlighting matching bracket.
+vim.cmd.highlight({"MatchParen", "ctermbg=blue"})
+vim.g.matchparen_disable_cursor_hl = 1
