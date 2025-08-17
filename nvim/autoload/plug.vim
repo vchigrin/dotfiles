@@ -1,0 +1,1 @@
+../plugin/vchigrin_plugins/start/vim-plug/plug.vim

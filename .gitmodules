@@ -16,3 +16,6 @@
 [submodule "vim-plugins/pack/myplugins/start/tagbar"]
 	path = vim-plugins/pack/myplugins/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "nvim/pack/vchigrin_plugins/start/vim-plug"]
+	path = nvim/plugin/vchigrin_plugins/start/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
