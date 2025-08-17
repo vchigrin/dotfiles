@@ -10,3 +10,5 @@ vim.api.nvim_set_keymap('n', '<F8>', ':Files<return>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<F9>', ':Buffers<return>', {noremap = true})
 -- tagbar plugin
 vim.api.nvim_set_keymap('n', '<F4>', ':TagbarToggle<return>', {noremap = true})
+-- trouble plugin
+vim.api.nvim_set_keymap('n', '<F2>', ':Trouble diagnostics toggle<return>', {noremap = true})
