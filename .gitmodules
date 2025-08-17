@@ -28,3 +28,6 @@
 [submodule "nvim/pack/vchigrin_plugins/start/fzf"]
 	path = nvim/pack/vchigrin_plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "nvim/pack/vchigrin_plugins/start/tagbar"]
+	path = nvim/pack/vchigrin_plugins/start/tagbar
+	url = https://github.com/preservim/tagbar.git
