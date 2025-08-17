@@ -19,3 +19,6 @@
 [submodule "nvim/plugin/vchigrin_plugins/start/nvim-tree.lua"]
 	path = nvim/pack/vchigrin_plugins/start/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua.git
+[submodule "nvim/pack/vchigrin_plugins/start/nvim-lspconfig"]
+	path = nvim/pack/vchigrin_plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
