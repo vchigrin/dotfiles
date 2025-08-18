@@ -1,18 +1,18 @@
-[submodule "vim-plugins/vim-fswitch"]
-	path = vim-plugins/pack/myplugins/start/vim-fswitch
-	url = https://github.com/derekwyatt/vim-fswitch.git
-[submodule "vim-plugins/nerdtree"]
-	path = vim-plugins/pack/myplugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim-plugins/pack/myplugins/start/fzf.vim"]
-	path = vim-plugins/pack/myplugins/start/fzf.vim
+[submodule "nvim/plugin/vchigrin_plugins/start/nvim-tree.lua"]
+	path = nvim/pack/vchigrin_plugins/start/nvim-tree.lua
+	url = https://github.com/nvim-tree/nvim-tree.lua.git
+[submodule "nvim/pack/vchigrin_plugins/start/nvim-lspconfig"]
+	path = nvim/pack/vchigrin_plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "nvim/pack/vchigrin_plugins/start/fzf.vim"]
+	path = nvim/pack/vchigrin_plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule "vim-plugins/pack/myplugins/start/fzf"]
-	path = vim-plugins/pack/myplugins/start/fzf
+[submodule "nvim/pack/vchigrin_plugins/start/fzf"]
+	path = nvim/pack/vchigrin_plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
-[submodule "vim-plugins/pack/myplugins/start/YouCompleteMe"]
-	path = vim-plugins/pack/myplugins/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
-[submodule "vim-plugins/pack/myplugins/start/tagbar"]
-	path = vim-plugins/pack/myplugins/start/tagbar
+[submodule "nvim/pack/vchigrin_plugins/start/tagbar"]
+	path = nvim/pack/vchigrin_plugins/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "nvim/pack/vchigrin_plugins/start/trouble.nvim"]
+	path = nvim/pack/vchigrin_plugins/start/trouble.nvim
+	url = https://github.com/folke/trouble.nvim.git
