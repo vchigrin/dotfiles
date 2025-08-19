@@ -35,3 +35,6 @@ vim.opt.fileencoding = 'utf-8'
 -- Avoid confusion with highlighting matching bracket.
 vim.cmd.highlight({"MatchParen", "ctermbg=blue"})
 vim.g.matchparen_disable_cursor_hl = 1
+
+-- Less intrusive completion popups
+vim.opt.completeopt = 'menu,popup,noinsert,noselect'
