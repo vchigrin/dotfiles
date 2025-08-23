@@ -2,6 +2,7 @@ vim.lsp.config('*', {
   root_markers = { '.git', 'compile_commands.json' },
 });
 vim.lsp.enable('clangd');
+vim.lsp.enable('rust_analyzer');
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
   callback = function(args)
