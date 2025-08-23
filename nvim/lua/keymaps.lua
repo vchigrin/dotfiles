@@ -12,3 +12,7 @@ vim.api.nvim_set_keymap('n', '<F9>', ':Buffers<return>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<F4>', ':TagbarToggle<return>', {noremap = true})
 -- trouble plugin
 vim.api.nvim_set_keymap('n', '<F2>', ':Trouble diagnostics toggle<return>', {noremap = true})
+-- Toggle inlay hints
+vim.keymap.set('n', '<Leader>t', function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end)
