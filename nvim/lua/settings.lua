@@ -38,3 +38,6 @@ vim.g.matchparen_disable_cursor_hl = 1
 
 -- Less intrusive completion popups
 vim.opt.completeopt = 'menu,popup,noinsert,noselect'
+
+-- Undo across editor closes
+vim.opt.undofile = true
