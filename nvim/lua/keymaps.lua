@@ -12,3 +12,5 @@ vim.api.nvim_set_keymap('n', '<F9>', ':Buffers<return>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<F4>', ':TagbarToggle<return>', {noremap = true})
 -- trouble plugin
 vim.api.nvim_set_keymap('n', '<F2>', ':Trouble diagnostics toggle<return>', {noremap = true})
+-- Copy current file path to keyboard
+vim.api.nvim_set_keymap('n', '<Leader>y', ':let @+=@%<cr>', {})
