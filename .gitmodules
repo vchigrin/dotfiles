@@ -16,3 +16,9 @@
 [submodule "nvim/pack/vchigrin_plugins/start/trouble.nvim"]
 	path = nvim/pack/vchigrin_plugins/start/trouble.nvim
 	url = https://github.com/folke/trouble.nvim.git
+[submodule "nvim/pack/vchigrin_plugins/start/codecompanion.nvim"]
+	path = nvim/pack/vchigrin_plugins/start/codecompanion.nvim
+	url = https://github.com/olimorris/codecompanion.nvim.git
+[submodule "nvim/pack/vchigrin_plugins/start/plenary.nvim"]
+	path = nvim/pack/vchigrin_plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
