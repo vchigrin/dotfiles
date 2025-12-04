@@ -45,7 +45,7 @@ bindsym --to-code $mod+Shift+y exec --no-startup-id /home/vchigrin/dotfiles/scre
 floating_modifier $mod
 
 # start a terminal
-bindsym --to-code $mod+Return exec i3-sensible-terminal
+bindsym --to-code $mod+Return exec alacritty
 
 # kill focused window
 bindsym --to-code $mod+Shift+q kill
