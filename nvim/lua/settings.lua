@@ -38,3 +38,7 @@ vim.g.matchparen_disable_cursor_hl = 1
 
 -- Less intrusive completion popups
 vim.opt.completeopt = 'menu,popup,noinsert,noselect'
+
+-- Folding
+vim.opt.foldenable = false
+vim.opt.foldmethod = 'syntax'
