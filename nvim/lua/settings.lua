@@ -42,3 +42,6 @@ vim.opt.completeopt = 'menu,popup,noinsert,noselect'
 -- Folding
 vim.opt.foldenable = false
 vim.opt.foldmethod = 'syntax'
+
+-- Grepping in project dirs
+vim.opt.grepprg = '/home/vchigrin/dotfiles/run_grep.sh'
